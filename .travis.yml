@@ -1,6 +1,6 @@
 language: generic
 # Only build if release + tag + latest master commit
-script: bash bin/check_to_build.sh || travis_terminate 0
+script: bash bin/check_to_build.sh imann24 travis-tests || travis_terminate 0
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
